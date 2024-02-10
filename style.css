@@ -1,0 +1,327 @@
+/* .registration-form{
+    border: 5px solid rgba(177, 8, 8, 0.614);
+    padding: 20px;
+    margin: 25px;
+    background-clip: padding-box;
+    position: relative;
+    font-size: 12px;
+    width: fit-content;
+    padding: 20px;
+    
+}
+
+.registration-form::after{
+    content: '';
+    position: absolute;
+    top: -11px; 
+    right: -11px;
+    bottom: -11px;
+    left: -11px;
+    border: 10px solid rgb(29, 204, 207); 
+    pointer-events: none; 
+}
+
+#form-title{
+    color: red;
+    text-align: center;
+    font-size: 26px;
+}
+
+.registration_contents{
+    font-size: 20px;
+    width: auto;
+    padding: 20px;
+    
+}
+
+form {
+    display: grid;
+    grid-template-columns: 150px 400px;
+    grid-gap: 15px;
+  } */
+
+
+/* 仮置き */
+/* 
+input:not([type='checkbox']) {
+width: 100%;
+height: 30px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.hobby-selection {
+    display: flex;
+}
+
+.radio-selection {
+  display: flex; 
+  margin-left: 10px; 
+}
+
+.radio-options label {
+  margin-right: 5px; 
+}
+
+.radio-options input[type="radio"] {
+  margin-right: 10px; 
+}
+
+
+  .hobby-selection label {
+    padding-top: 2px;
+    margin-right: 10px;
+  }
+  button {
+    grid-column: span 2;
+    justify-self: end;
+  } 
+ */
+
+
+
+.registration-form {
+  border: 5px solid rgba(177, 8, 8, 0.614);
+  padding: 20px;
+  margin: 25px;
+  background-clip: padding-box;
+  position: relative;
+  font-size: 12px;
+  width: fit-content;
+  width: 80%;
+  width: 850px;
+  margin: 25px auto;
+}
+
+.registration-form::after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  bottom: -11px;
+  left: -11px;
+  border: 10px solid rgb(29, 204, 207);
+  pointer-events: none;
+}
+
+#form-title {
+  color: red;
+  text-align: center;
+  font-size: 26px;
+}
+
+.registration_contents {
+  font-size: 20px;
+  width: auto;
+  padding: 20px;
+}
+
+input{
+  max-width: 600px;
+}
+
+input:not([type='checkbox']),
+textarea {
+  width: 100%;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+input[type='email'],
+input[type='password'],
+input[type='confirm-password'],
+input[type='tel'],
+.country_name{
+  height: 40px;
+}
+
+.radio-selection input{
+  width: 20%;
+}
+
+.radio-selection {
+  display: flex;
+}
+
+.radio-options label {
+  margin-right: 5px;
+}
+
+label {
+  color: rgb(146, 50, 2); 
+}
+
+.radio-selection label,
+.declaration-section label{
+  color: black;
+}
+
+.radio-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.hobby-selection label {
+  padding-top: 2px;
+  margin-right: 10px;
+}
+
+button {
+  justify-self: end;
+}
+
+form {
+  display: table;
+  width: 100%;
+}
+
+form table{
+  border-spacing: 0;
+  width: 100%;
+}
+form td{
+  padding: 10px;
+  /* border-bottom: 1px solid #EEE; */
+}
+form th{
+  padding: 15px;
+  /* border-bottom: 1px solid #EEE; */
+  text-align: left;
+  font-weight: normal;
+  vertical-align: top;
+  width: 8em;
+}
+
+.submit_register_reset{
+  display: flex;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  text-align: right;
+  font-weight: normal;
+  width: 30%;
+}
+
+td {
+  text-align: left;
+}
+
+td input, .address, .country_name {
+  border: 1px solid red; 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+textarea,
+.country_name,
+#password{
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+} 
+
+
+
+#address{
+  height: 150px;
+}
+
+.phone_area{
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone_area .country_code {
+  width: 80px;
+}
+
+.phone_area .phone_number {
+  width: 450px;
+}
+
+.hobbies-section, .upload-sectio,
+.declaration-section, .g-recaptcha,
+.submit_register_reset{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.hobbies-section label{
+  padding-right: 50px;
+  padding-left: 25px;
+}
+
+.hobbies-section label:nth-child(1),
+.upload-section label:nth-child(1),
+.declaration-section label:nth-child(1),
+.g-recaptcha {
+  padding-left: 15px;
+}
+
+.upload-section label:nth-child(1){
+  padding-right: 50px;
+  padding-left: 15px;
+}
+.img_file_area p:nth-child(1) {
+  padding-left: 50px;
+  color: red;
+}
+.img_file_area p:nth-child(2) {
+  padding-left: 90px;
+}
+
+.img_file_area{
+  display: flex;
+}
+
+.img_file_area p{
+  margin: 0 20px 0 0;
+}
+
+.upload-section{
+  display: flex;
+  align-items: center;
+}
+
+.submit_register_reset{
+  display: flex;
+  text-align: center;
+}
+
+.submit_register_reset div {
+  flex: 1; 
+  margin-right: 10px; 
+}
+
+.registerbtn, .submit_register_reset p {
+  width: 80%; 
+}
+
+.registerbtn{
+  height: 30px;
+}
+
+.submit_register_reset p {
+  margin-top: 0;
+}
+
+.resetbtn{
+  height: 30px;
+}
+
+.registerbtn, .resetbtn{
+  background-color: rgb(200, 52, 7);
+  color: white;
+}

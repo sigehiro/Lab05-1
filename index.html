@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6Ld5120pAAAAAH6PWry1XsFJ91RF3m3Q76p85M3O"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Lab05</title>
+  </head>
+  <body>
+    <div>
+      <div class="registration-form">
+        <h1 id="form-title">STUDENT REGISTRATION FORM</h1>
+        <div class="registration_contents">
+          <form
+            action=""
+            method="post"
+          >
+            <table>
+              <tr>
+                <th>
+                  <label for="first-name">First Name</label>
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    name="first-name"
+                    placeholder="Enter First Name"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="last-name">Last Name</label>
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    name="last-name"
+                    placeholder="Enter Last Name"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="gender">Gender</label>
+                </th>
+                <td>
+                  <div class="radio-selection">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="gender-male"
+                      value="male"
+                    />
+                    <label for="gender-male">Male</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="gender-female"
+                      value="female"
+                    />
+                    <label for="gender-female">Female</label>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="age">Age</label>
+                </th>
+                <td>
+                  <input
+                    type="number"
+                    name="age"
+                    placeholder="Enter your age"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="dob">Date of Birth</label>
+                </th>
+                <td>
+                  <input
+                    type="date"
+                    name="dob"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="email">Email Address</label>
+                </th>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    autocomplete="off"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="password">Password</label>
+                </th>
+                <td>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password min 8 characters "
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="confirm-password">Confirm Password</label>
+                </th>
+                <td>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Confirm password"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="">Phone Number</label>
+                </th>
+                <td class="phone_area">
+                  <select
+                    name="country_code"
+                    class="country_code"
+                  >
+                    <option value="+91">+91</option>
+                    <option value="+81">+81</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                  </select>
+                  <input
+                    type="tel"
+                    name="phone_number"
+                    id="phone_number"
+                    class="phone_number"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="">Address</label>
+                </th>
+                <td>
+                  <textarea
+                    name="address"
+                    id="address"
+                    class="address"
+                    placeholder="Enter your address"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label for="state">State</label>
+                </th>
+                <td>
+                  <select
+                    name="state"
+                    class="country_name"
+                  >
+                    <option
+                      value="country_name"
+                      disabled
+                      selected
+                    >
+                      --Select your state--
+                    </option>
+                    <optgroup label="Aerica">
+                      <option value="Canada">Canada</option>
+                      <option value="America">America</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                      <option value="”Japan”">Japan</option>
+                      <option value="India">India</option>
+                      <option value="United_Kingdom">United Kingdom</option>
+                    </optgroup>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <label>Pin Code</label>
+                </th>
+                <td>
+                  <input
+                    type="number"
+                    placeholder="Enter your pin code"
+                  />
+                </td>
+              </tr>
+            </table>
+
+            <div class="hobbies-section">
+              <label>Hobbies</label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  value="music"
+                />
+                Music
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  value="movies"
+                />
+                Movies
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  value="sports"
+                />
+                Sports
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  value="travel"
+                />
+                Travel
+              </label>
+            </div>
+
+            <div class="upload-section">
+              <label for="img-file">Upload Photo</label>
+              <div class="img_file_area">
+                <p>
+                  *Max size
+                  <br />
+                  100kb.
+                </p>
+                <p>
+                  <input
+                    type="file"
+                    id="img-file"
+                    name="img"
+                    accept="image/*"
+                  />
+                </p>
+              </div>
+            </div>
+
+            <div class="declaration-section">
+              <label for="declaration_checkbox">
+                <input
+                  id="declaration_checkbox"
+                  type="checkbox"
+                  name="declaration_confirmed"
+                  value="1"
+                  required
+                />
+                I hereby declare that the above information provided is true and
+                correct.</label
+              >
+            </div>
+
+            <div
+              class="g-recaptcha"
+              data-sitekey="6Ld5120pAAAAAH6PWry1XsFJ91RF3m3Q76p85M3O"
+            ></div>
+
+            <div class="submit_register_reset">
+              <div>
+                <button
+                  type="submit"
+                  class="registerbtn"
+                >
+                  Register
+                </button>
+              </div>
+              <div class="rest_section">
+                <p>
+                  <input
+                    type="reset"
+                    value="Reset"
+                    class="resetbtn"
+                  />
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
